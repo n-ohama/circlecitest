@@ -5,7 +5,7 @@ jobs:
       - image: node:10
     steps:
       - checkout
-      - run: echo "hello circleci"
+      - run: echo "hello circleci　あああ"
 workflows:
   version: 2
   test-hello:
