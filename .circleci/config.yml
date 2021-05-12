@@ -2,16 +2,12 @@
 version: 2.0
 
 jobs:
-  build:
+  test:
     docker:
       - image: node:10
     steps:
       - checkout
-    test:
-      machine:
-        enabled: true
-      steps:
-        - run: echo "hello cicleci"
+      - run: echo "hello cicleci"
 workflows:
   version: 2
   test-hello:
