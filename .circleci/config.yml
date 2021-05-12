@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: node:10
+    steps:
+      - checkout
+      - run: echo "hello circleci"
+workflows:
+  version: 2
+  test-hello:
+    jobs:
+      - test
