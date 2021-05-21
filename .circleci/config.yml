@@ -1,13 +1,8 @@
-version: 2
+version: 2.1
 jobs:
-  test:
+  build:
     docker:
-      - image: node:10
+      - image: circleci/node:4.8.2
     steps:
       - checkout
-      - run: echo "hello circleci　あああ"
-workflows:
-  version: 2
-  test-hello:
-    jobs:
-      - test
+      - run: echo "hello world"
